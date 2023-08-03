@@ -33,7 +33,7 @@ typedef struct binary_tree_s heap_t;
 /* binary_tree_print.c */
 void binary_tree_print(const binary_tree_t *);
 
-
+/* tasks */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
@@ -54,6 +54,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
+/* Advanced tasks */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 				     const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
@@ -74,10 +75,9 @@ int binary_tree_is_heap(const binary_tree_t *tree);
 heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
-int *heap_to_sorted_array(heap_t *heap, *heap, size_t *size);
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
-
-
+/* helper functions */
 int _pow_recursion(int x, int y);
 binary_tree_t *bta_helper(binary_tree_t *root, const binary_tree_t *first,
 			  const binary_tree_t *second);
